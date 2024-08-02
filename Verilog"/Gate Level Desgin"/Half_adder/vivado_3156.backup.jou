@@ -1,0 +1,67 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Mon Jul 29 16:23:27 2024
+# Process ID: 3156
+# Current directory: D:/Vivado/Gate_level/Verilog/Half_adder
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15876 D:\Vivado\Gate_level\Verilog\Half_adder\Half_adder.xpr
+# Log file: D:/Vivado/Gate_level/Verilog/Half_adder/vivado.log
+# Journal file: D:/Vivado/Gate_level/Verilog/Half_adder\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Vivado/Gate_level/Verilog/Half_adder/Half_adder.xpr
+update_compile_order -fileset sources_1
+close_project
+create_project half_adder_Tcl_console D:/Vivado/Gate_level/Verilog/half_adder_Tcl_console -part xc7vx485tffg1157-1
+file mkdir D:/Vivado/Gate_level/Verilog/half_adder_Tcl_console/half_adder_Tcl_console.srcs/sources_1/new
+close [ open D:/Vivado/Gate_level/Verilog/half_adder_Tcl_console/half_adder_Tcl_console.srcs/sources_1/new/half_adder.v w ]
+add_files D:/Vivado/Gate_level/Verilog/half_adder_Tcl_console/half_adder_Tcl_console.srcs/sources_1/new/half_adder.v
+update_compile_order -fileset sources_1
+file mkdir D:/Vivado/Gate_level/Verilog/half_adder_Tcl_console/half_adder_Tcl_console.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open D:/Vivado/Gate_level/Verilog/half_adder_Tcl_console/half_adder_Tcl_console.srcs/sim_1/new/half_adderTB.v w ]
+add_files -fileset sim_1 D:/Vivado/Gate_level/Verilog/half_adder_Tcl_console/half_adder_Tcl_console.srcs/sim_1/new/half_adderTB.v
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+$
+$monitor
+$monitor
+launch_simulation
+source Half_adderTB.tcl
+$monitor
+$
+$
+$monitor
+close_sim
+launch_simulation
+source Half_adderTB.tcl
+$
+$monitor
+close_sim
+launch_simulation
+source Half_adderTB.tcl
+close_sim
+close_project
+create_project Full_adder_Tcl_console D:/Vivado/Gate_level/Verilog/Full_adder_Tcl_console -part xc7vx485tffg1157-1
+file mkdir D:/Vivado/Gate_level/Verilog/Full_adder_Tcl_console/Full_adder_Tcl_console.srcs/sources_1/new
+close [ open D:/Vivado/Gate_level/Verilog/Full_adder_Tcl_console/Full_adder_Tcl_console.srcs/sources_1/new/full_adder.v w ]
+add_files D:/Vivado/Gate_level/Verilog/Full_adder_Tcl_console/Full_adder_Tcl_console.srcs/sources_1/new/full_adder.v
+update_compile_order -fileset sources_1
+file mkdir D:/Vivado/Gate_level/Verilog/Full_adder_Tcl_console/Full_adder_Tcl_console.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open D:/Vivado/Gate_level/Verilog/Full_adder_Tcl_console/Full_adder_Tcl_console.srcs/sim_1/new/Full_adderTB.v w ]
+add_files -fileset sim_1 D:/Vivado/Gate_level/Verilog/Full_adder_Tcl_console/Full_adder_Tcl_console.srcs/sim_1/new/Full_adderTB.v
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_simulation
+source Full_adderTB.tcl
+$
+$
+close_sim
+launch_simulation
+launch_simulation
+source Full_adderTB.tcl
+$
+$
+close_sim

@@ -1,0 +1,420 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Mon Jul 29 16:23:27 2024
+# Process ID: 3156
+# Current directory: D:/Vivado/Gate_level/Verilog/Half_adder
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15876 D:\Vivado\Gate_level\Verilog\Half_adder\Half_adder.xpr
+# Log file: D:/Vivado/Gate_level/Verilog/Half_adder/vivado.log
+# Journal file: D:/Vivado/Gate_level/Verilog/Half_adder\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Vivado/Gate_level/Verilog/Half_adder/Half_adder.xpr
+INFO: [Project 1-313] Project file moved from 'D:/Vivado/Gate_level/Half_adder' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 782.352 ; gain = 50.605
+update_compile_order -fileset sources_1
+close_project
+create_project half_adder_Tcl_console D:/Vivado/Gate_level/Verilog/half_adder_Tcl_console -part xc7vx485tffg1157-1
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 834.508 ; gain = 0.000
+file mkdir D:/Vivado/Gate_level/Verilog/half_adder_Tcl_console/half_adder_Tcl_console.srcs/sources_1/new
+close [ open D:/Vivado/Gate_level/Verilog/half_adder_Tcl_console/half_adder_Tcl_console.srcs/sources_1/new/half_adder.v w ]
+add_files D:/Vivado/Gate_level/Verilog/half_adder_Tcl_console/half_adder_Tcl_console.srcs/sources_1/new/half_adder.v
+update_compile_order -fileset sources_1
+file mkdir D:/Vivado/Gate_level/Verilog/half_adder_Tcl_console/half_adder_Tcl_console.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open D:/Vivado/Gate_level/Verilog/half_adder_Tcl_console/half_adder_Tcl_console.srcs/sim_1/new/half_adderTB.v w ]
+add_files -fileset sim_1 D:/Vivado/Gate_level/Verilog/half_adder_Tcl_console/half_adder_Tcl_console.srcs/sim_1/new/half_adderTB.v
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+$
+invalid command name "$"
+$monitor
+can't read "monitor": no such variable
+$monitor
+can't read "monitor": no such variable
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Vivado/Gate_level/Verilog/half_adder_Tcl_console/half_adder_Tcl_console.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Half_adderTB' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Vivado/Gate_level/Verilog/half_adder_Tcl_console/half_adder_Tcl_console.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Half_adderTB_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/Gate_level/Verilog/half_adder_Tcl_console/half_adder_Tcl_console.srcs/sources_1/new/half_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Half_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/Gate_level/Verilog/half_adder_Tcl_console/half_adder_Tcl_console.srcs/sim_1/new/half_adderTB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Half_adderTB
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/Gate_level/Verilog/half_adder_Tcl_console/half_adder_Tcl_console.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Vivado/Gate_level/Verilog/half_adder_Tcl_console/half_adder_Tcl_console.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto cb6e82a84f0e47148240c9f5e5e4bc6f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Half_adderTB_behav xil_defaultlib.Half_adderTB xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Half_adder
+Compiling module xil_defaultlib.Half_adderTB
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Half_adderTB_behav
+
+****** Webtalk v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source D:/Vivado/Gate_level/Verilog/half_adder_Tcl_console/half_adder_Tcl_console.sim/sim_1/behav/xsim/xsim.dir/Half_adderTB_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Mon Jul 29 16:45:20 2024...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 855.062 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Vivado/Gate_level/Verilog/half_adder_Tcl_console/half_adder_Tcl_console.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Half_adderTB_behav -key {Behavioral:sim_1:Functional:Half_adderTB} -tclbatch {Half_adderTB.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source Half_adderTB.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+At time 0: a=0 b=0, sum=0, carry=0
+At time 100000: a=0 b=1, sum=1, carry=0
+At time 200000: a=1 b=0, sum=1, carry=0
+At time 300000: a=1 b=1, sum=0, carry=1
+xsim: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 870.805 ; gain = 15.523
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Half_adderTB_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:08 ; elapsed = 00:00:17 . Memory (MB): peak = 870.805 ; gain = 15.742
+$monitor
+can't read "monitor": no such variable
+$
+invalid command name "$"
+$
+invalid command name "$"
+$monitor
+can't read "monitor": no such variable
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 876.945 ; gain = 0.000
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Vivado/Gate_level/Verilog/half_adder_Tcl_console/half_adder_Tcl_console.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Half_adderTB' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Vivado/Gate_level/Verilog/half_adder_Tcl_console/half_adder_Tcl_console.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Half_adderTB_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/Gate_level/Verilog/half_adder_Tcl_console/half_adder_Tcl_console.srcs/sources_1/new/half_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Half_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/Gate_level/Verilog/half_adder_Tcl_console/half_adder_Tcl_console.srcs/sim_1/new/half_adderTB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Half_adderTB
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Vivado/Gate_level/Verilog/half_adder_Tcl_console/half_adder_Tcl_console.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto cb6e82a84f0e47148240c9f5e5e4bc6f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Half_adderTB_behav xil_defaultlib.Half_adderTB xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Half_adder
+Compiling module xil_defaultlib.Half_adderTB
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Half_adderTB_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Vivado/Gate_level/Verilog/half_adder_Tcl_console/half_adder_Tcl_console.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Half_adderTB_behav -key {Behavioral:sim_1:Functional:Half_adderTB} -tclbatch {Half_adderTB.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source Half_adderTB.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+At time 0: a=0 b=0, sum=0, carry=0
+At time 100000: a=0 b=1, sum=1, carry=0
+At time 200000: a=1 b=0, sum=1, carry=0
+At time 300000: a=1 b=1, sum=0, carry=1
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Half_adderTB_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 879.520 ; gain = 2.574
+$
+invalid command name "$"
+$monitor
+can't read "monitor": no such variable
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Vivado/Gate_level/Verilog/half_adder_Tcl_console/half_adder_Tcl_console.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Half_adderTB' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Vivado/Gate_level/Verilog/half_adder_Tcl_console/half_adder_Tcl_console.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Half_adderTB_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/Gate_level/Verilog/half_adder_Tcl_console/half_adder_Tcl_console.srcs/sources_1/new/half_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Half_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/Gate_level/Verilog/half_adder_Tcl_console/half_adder_Tcl_console.srcs/sim_1/new/half_adderTB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Half_adderTB
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Vivado/Gate_level/Verilog/half_adder_Tcl_console/half_adder_Tcl_console.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto cb6e82a84f0e47148240c9f5e5e4bc6f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Half_adderTB_behav xil_defaultlib.Half_adderTB xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Half_adder
+Compiling module xil_defaultlib.Half_adderTB
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Half_adderTB_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Vivado/Gate_level/Verilog/half_adder_Tcl_console/half_adder_Tcl_console.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Half_adderTB_behav -key {Behavioral:sim_1:Functional:Half_adderTB} -tclbatch {Half_adderTB.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source Half_adderTB.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+a, b, s, c
+0	0	0	0
+0	1	1	0
+1	0	1	0
+1	1	0	1
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Half_adderTB_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 882.891 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_project
+create_project Full_adder_Tcl_console D:/Vivado/Gate_level/Verilog/Full_adder_Tcl_console -part xc7vx485tffg1157-1
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
+file mkdir D:/Vivado/Gate_level/Verilog/Full_adder_Tcl_console/Full_adder_Tcl_console.srcs/sources_1/new
+close [ open D:/Vivado/Gate_level/Verilog/Full_adder_Tcl_console/Full_adder_Tcl_console.srcs/sources_1/new/full_adder.v w ]
+add_files D:/Vivado/Gate_level/Verilog/Full_adder_Tcl_console/Full_adder_Tcl_console.srcs/sources_1/new/full_adder.v
+update_compile_order -fileset sources_1
+file mkdir D:/Vivado/Gate_level/Verilog/Full_adder_Tcl_console/Full_adder_Tcl_console.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open D:/Vivado/Gate_level/Verilog/Full_adder_Tcl_console/Full_adder_Tcl_console.srcs/sim_1/new/Full_adderTB.v w ]
+add_files -fileset sim_1 D:/Vivado/Gate_level/Verilog/Full_adder_Tcl_console/Full_adder_Tcl_console.srcs/sim_1/new/Full_adderTB.v
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Vivado/Gate_level/Verilog/Full_adder_Tcl_console/Full_adder_Tcl_console.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Full_adderTB' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Vivado/Gate_level/Verilog/Full_adder_Tcl_console/Full_adder_Tcl_console.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Full_adderTB_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/Gate_level/Verilog/Full_adder_Tcl_console/Full_adder_Tcl_console.srcs/sources_1/new/full_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Full_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/Gate_level/Verilog/Full_adder_Tcl_console/Full_adder_Tcl_console.srcs/sim_1/new/Full_adderTB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Full_adderTB
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/Gate_level/Verilog/Full_adder_Tcl_console/Full_adder_Tcl_console.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Vivado/Gate_level/Verilog/Full_adder_Tcl_console/Full_adder_Tcl_console.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 653065c889ee4e15a5fdadc3dab7af1b --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Full_adderTB_behav xil_defaultlib.Full_adderTB xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Full_adder
+Compiling module xil_defaultlib.Full_adderTB
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Full_adderTB_behav
+
+****** Webtalk v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source D:/Vivado/Gate_level/Verilog/Full_adder_Tcl_console/Full_adder_Tcl_console.sim/sim_1/behav/xsim/xsim.dir/Full_adderTB_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Mon Jul 29 17:26:31 2024...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 896.059 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Vivado/Gate_level/Verilog/Full_adder_Tcl_console/Full_adder_Tcl_console.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Full_adderTB_behav -key {Behavioral:sim_1:Functional:Full_adderTB} -tclbatch {Full_adderTB.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source Full_adderTB.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+A,B,D,C,S
+00000
+00110
+01010
+01101
+10010
+10101
+11001
+11111
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Full_adderTB_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 896.059 ; gain = 0.000
+$
+invalid command name "$"
+$
+invalid command name "$"
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Vivado/Gate_level/Verilog/Full_adder_Tcl_console/Full_adder_Tcl_console.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Full_adderTB' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Vivado/Gate_level/Verilog/Full_adder_Tcl_console/Full_adder_Tcl_console.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Full_adderTB_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/Gate_level/Verilog/Full_adder_Tcl_console/Full_adder_Tcl_console.srcs/sources_1/new/full_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Full_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/Gate_level/Verilog/Full_adder_Tcl_console/Full_adder_Tcl_console.srcs/sim_1/new/Full_adderTB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Full_adderTB
+ERROR: [VRFC 10-1412] syntax error near initial [D:/Vivado/Gate_level/Verilog/Full_adder_Tcl_console/Full_adder_Tcl_console.srcs/sim_1/new/Full_adderTB.v:46]
+ERROR: [VRFC 10-2790] Verilog 2000 keyword initial used in incorrect context [D:/Vivado/Gate_level/Verilog/Full_adder_Tcl_console/Full_adder_Tcl_console.srcs/sim_1/new/Full_adderTB.v:46]
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'D:/Vivado/Gate_level/Verilog/Full_adder_Tcl_console/Full_adder_Tcl_console.sim/sim_1/behav/xsim/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'D:/Vivado/Gate_level/Verilog/Full_adder_Tcl_console/Full_adder_Tcl_console.sim/sim_1/behav/xsim/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Vivado/Gate_level/Verilog/Full_adder_Tcl_console/Full_adder_Tcl_console.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Full_adderTB' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Vivado/Gate_level/Verilog/Full_adder_Tcl_console/Full_adder_Tcl_console.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Full_adderTB_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/Gate_level/Verilog/Full_adder_Tcl_console/Full_adder_Tcl_console.srcs/sources_1/new/full_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Full_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/Gate_level/Verilog/Full_adder_Tcl_console/Full_adder_Tcl_console.srcs/sim_1/new/Full_adderTB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Full_adderTB
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Vivado/Gate_level/Verilog/Full_adder_Tcl_console/Full_adder_Tcl_console.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 653065c889ee4e15a5fdadc3dab7af1b --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Full_adderTB_behav xil_defaultlib.Full_adderTB xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Full_adder
+Compiling module xil_defaultlib.Full_adderTB
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Full_adderTB_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Vivado/Gate_level/Verilog/Full_adder_Tcl_console/Full_adder_Tcl_console.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Full_adderTB_behav -key {Behavioral:sim_1:Functional:Full_adderTB} -tclbatch {Full_adderTB.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source Full_adderTB.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+A,B,D,C,S
+00000
+00110
+01010
+01101
+10010
+10101
+11001
+11111
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Full_adderTB_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 896.059 ; gain = 0.000
+$
+invalid command name "$"
+$
+invalid command name "$"
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Jul 29 17:31:16 2024...
