@@ -1,0 +1,20 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Tue Jul 30 12:59:34 2024
+# Process ID: 9640
+# Current directory: D:/Vivado/Gate_level/Verilog/Full_adder_Tcl_console
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14836 D:\Vivado\Gate_level\Verilog\Full_adder_Tcl_console\Full_adder_Tcl_console.xpr
+# Log file: D:/Vivado/Gate_level/Verilog/Full_adder_Tcl_console/vivado.log
+# Journal file: D:/Vivado/Gate_level/Verilog/Full_adder_Tcl_console\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Vivado/Gate_level/Verilog/Full_adder_Tcl_console/Full_adder_Tcl_console.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source Full_adderTB.tcl
+close_sim
+launch_simulation
+source Full_adderTB.tcl
+close_sim
